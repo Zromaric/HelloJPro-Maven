@@ -10,11 +10,11 @@
     <properties>
         <jpro.version>2026.1.0</jpro.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>22</java.version>
+        <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
-        <javafx.version>25.0.2</javafx.version>
+        <javafx.version>17.0.10</javafx.version>
     </properties>
 
     <name>Hello JPro!</name>
@@ -103,4 +103,11 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
+
+   <distributionManagement>
+    <repository>
+        <id>test_first_maven</id>
+        <url>http://15.224.1.241:8081/repository/test_first_maven/</url>
+    </repository>
+  </distributionManagement>
 </project>
